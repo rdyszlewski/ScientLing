@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMain">#0999FA</color>
+    <color name="buttonColor">#0999FA</color>
+    <color name="colorBackground">#F2F2F2</color>
+    <color name="colorFirstBackground">#EAEAEA</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="correctColor">#72CD08</color>
+    <color name="incorrectColor">#B40900</color>
+    <color name="middleCorrectColor">#FD8302</color>
+    <color name="colorBorder">#333333</color>
+    <color name="colorLabel">#9B9B9B</color>
+    <color name="pressedButtonColor">#0F9999</color>
+</resources>

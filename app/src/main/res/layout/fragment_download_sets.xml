@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/search_edit_text"
+        style="@style/EditTextStyle"
+        android:visibility="gone"/>
+
+    <LinearLayout android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            style="@style/LabelStyle"
+            android:labelFor="@+id/l1_spinner"
+            android:text="@string/l1"/>
+        <Spinner android:id="@+id/l1_spinner"
+            style="@style/SpinnerStyle"/>
+        <TextView
+            style="@style/LabelStyle"
+            android:labelFor="@+id/l2_spinner"
+            android:text="@string/l2"/>
+        <Spinner android:id="@+id/l2_spinner"
+            style="@style/SpinnerStyle"/>
+    </LinearLayout>
+
+    <Spinner android:id="@+id/sorting_spinner"
+        style="@style/SpinnerStyle"
+        android:visibility="gone"/>
+
+    <Button android:id="@+id/get_button"
+        style="@style/ButtonStyle"
+        android:text="@string/search"
+        android:layout_margin="@dimen/margin"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loading_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/loading_text_view"
+            style="@style/TextViewStyle"
+            android:gravity="center"
+            android:text="@string/loading" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button android:id="@+id/lesson_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/lesson"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/definition_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/definition"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/part_of_speech_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/part_of_speech"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/difficult_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/difficult"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/category_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/category"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/sentences_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/sentence"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/hints_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/hints"
+        android:focusableInTouchMode="false"
+        />
+    <Button android:id="@+id/image_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/image"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="center"
+        />
+    <Button android:id="@+id/record_button"
+        style="@style/SmallEditTextStyle"
+        android:hint="@string/record"
+        android:focusableInTouchMode="false"
+        />
+</LinearLayout>

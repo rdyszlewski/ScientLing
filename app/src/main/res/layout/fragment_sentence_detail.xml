@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sentence_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dyszlewskiR.edu.scientling.presentation.fragment.SentenceDetailFragment"
+    tools:showIn="@layout/activity_sentence_detail"
+    android:background="@drawable/shadow_border">
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/content_edit_text"
+        android:hint="@string/sentence"/>
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/translation_edit_text"
+        android:layout_below="@id/content_edit_text"
+        android:hint="@string/sentence_translation"/>
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/ok_button"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ok"/>
+</RelativeLayout>

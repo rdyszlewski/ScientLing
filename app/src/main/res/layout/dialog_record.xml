@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/title_text_view"
+        style="@style/TextViewStyle"
+        android:text="@string/lack"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        >
+        <ImageButton android:id="@+id/delete_button"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"/>
+        <ImageButton android:id="@+id/play_button"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+        <ImageButton android:id="@+id/recorder_button"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:layout_toLeftOf="@+id/open_button"
+            android:layout_marginRight="@dimen/margin"/>
+        <ImageButton android:id="@+id/open_button"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin">
+        <Button android:id="@+id/cancel_button"
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/cancel"
+            android:layout_weight="1"/>
+        <Button android:id="@+id/ok_button"
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/ok"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

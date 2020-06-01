@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/word_content_text_view"
+            style="@style/TextViewStyle" />
+        <TextView
+            android:id="@+id/word_translation_text_view"
+            style="@style/LabelStyle"
+            android:layout_marginTop="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.6"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/category_text_view"
+           style="@style/LabelStyle"
+            android:layout_marginTop="@dimen/margin"/>
+        <TextView
+            android:id="@id/part_of_speech_text_view"
+            style="@style/LabelStyle"
+            android:layout_marginTop="@dimen/margin"/>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/hard_image_view"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="@dimen/margin"
+        android:src="@drawable/ic_menu"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/menu_button"
+        style="@style/ActionButton"
+        />
+</LinearLayout>

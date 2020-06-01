@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/vocabulary_set"/>
+        <Spinner android:id="@+id/set_spinner"
+            style="@style/SpinnerStyle"
+            />
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/lesson"/>
+        <Spinner android:id="@+id/lesson_spinner"
+            style="@style/SpinnerStyle" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/category"/>
+        <Spinner android:id="@+id/category_spinner"
+            style="@style/SpinnerStyle" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/mode"/>
+        <Spinner android:id="@+id/words_spinner"
+            style="@style/SpinnerStyle"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <EditText android:id="@+id/search_edit_text"
+            style="@style/EditTextStyle"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+        <ImageButton android:id="@+id/search_button"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:text="@string/search"
+            android:layout_margin="@dimen/margin"/>
+    </LinearLayout>
+
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <LinearLayout android:id="@+id/loading_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ProgressBar
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size"
+            android:layout_gravity="center"/>
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/loading_words"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

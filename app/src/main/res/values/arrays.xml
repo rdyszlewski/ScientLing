@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actionbar_spinner_items">
+        <item>Wiem/Nie wiem</item>
+        <item>Wiem/Nie wiem odwrotnie</item>
+        <item>Wybór tłumaczenia</item>
+        <item>Wybór znaczenia</item>
+        <item>Rozumienie ze słuchu</item>
+        <item>Wybór tłumaczenia ze słuchu</item>
+        <item>Dyktando</item>
+        <item>Tłumaczenie ze słuchu</item>
+        <item>Wpisywanie tłumaczenia</item>
+    </string-array>
+</resources>

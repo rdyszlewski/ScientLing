@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dyszlewskiR.edu.scientling.presentation.activity.SetDetailsActivity"
+    tools:showIn="@layout/activity_set_details"
+    android:background="@drawable/shadow_border"
+    >
+
+    <TextView
+        android:id="@+id/name_text_view"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintHorizontal_bias="0.045"
+        />
+
+    <TextView
+        android:id="@+id/downloaded_text_view"
+        style="@style/TextViewStyle"
+        android:textSize="@dimen/small_text_size"
+        android:layout_width="wrap_content"
+        android:text="@string/downloaded"
+        android:textColor="@color/correctColor"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline6"
+        android:visibility="invisible"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/frameLayout3"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline6">
+        <Button
+            android:id="@+id/download_button"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/download"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/l1_text_view"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/name_text_view"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:text="-"
+        app:layout_constraintLeft_toRightOf="@+id/l1_text_view"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/textView7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/l2_text_view"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp" />
+    <TextView
+        android:id="@+id/l2_text_view"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/author_text_view"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/l1_text_view"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="@+id/l1_text_view"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black_overlay"
+        android:id="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5" />
+
+    <TextView
+        android:id="@+id/rating_text_view"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline5"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/textView15"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:text="@string/rating"
+        app:layout_constraintTop_toBottomOf="@+id/rating_text_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline5"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/download_count_text_view"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline6"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/download_count"
+        android:id="@+id/textView16"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/download_count_text_view"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+        app:layout_constraintRight_toLeftOf="@+id/guideline6"
+        />
+
+    <TextView
+        android:id="@+id/added_date_text_view"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        />
+
+    <TextView
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/added_date"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+        />
+
+    <View
+        android:layout_width="374dp"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/black_overlay"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        android:id="@+id/view4"
+        />
+
+    <TextView android:id="@+id/show_more_text_view"
+        style="@style/TextViewButtonStyle"
+        android:textColor="@color/correctColor"
+        android:layout_width="wrap_content"
+        android:text="@string/more_information"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_height="0dp" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <ViewStub android:id="@+id/rating_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inflatedId="@+id/rating_stub"
+            android:layout="@layout/stub_rating"
+             />
+    </FrameLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline5"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="120dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="240dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_more_text_view">
+
+        <ViewStub
+            android:id="@+id/more_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inflatedId="@+id/desriptioon_stub"
+            android:layout="@layout/stub_set_description" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintTop_toBottomOf="@+id/author_text_view"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ProgressBar android:id="@+id/download_progress_bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
+
+

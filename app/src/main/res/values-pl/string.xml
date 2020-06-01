@@ -1,0 +1,406 @@
+<resources>
+    <string name="app_name">ScientLing</string>
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Hasło</string>
+    <string name="log_in">Zaloguj</string>
+    <string name="log_out">Wyloguj</string>
+    <string name="log_outing">Wylogowywanie</string>
+    <string name="sure_logout">Czy na pewno wylogować</string>
+    <string name="login">Login</string>
+    <string name="login_or_email">Login lub email</string>
+    <string name="password">Hasło</string>
+    <string name="show_answers">Pokaż odpowiedzi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="know">Wiem</string>
+    <string name="dontKnow">Nie wiem</string>
+    <string name="almostKnow">Prawie wiem</string>
+    <string name="put_translation">Wpisz tłumaczenie </string>
+    <string name="check_answer">Sprawdź odpowiedź</string>
+    <string name="repeat">Powtórz</string>
+    <string name="finish">Zakończ</string>
+    <string name="title_activity_repetition_list">RepetitionListActivity</string>
+    <string name="title_activity_word_edit">WordEditActivity</string>
+    <string name="master_words">Przećwiczonych słowek: </string>
+    <string name="not_remember">Nie pamiętam hasła</string>
+    <string name="register">Utwórz konto</string>
+
+    <!--OGOLNE-->
+    <string name="any">Dowolny</string>
+    <string name="lack">Brak</string>
+    <string name="save">Zapisz</string>
+    <string name="next_item">Następne</string>
+    <string name="previous_item">Poprzednie</string>
+    <string name="change">Zmień</string>
+    <string name="search">Szukaj</string>
+    <string name="start">Rozpocznij</string>
+    <string name="set">Ustaw</string>
+    <string name="cancel">Anuluj</string>
+    <string name="edit">Edytuj</string>
+    <string name="delete">Usuń</string>
+    <string name="see">Zobacz</string>
+    <string name="add_to_hard">Dodaj do trudnych</string>
+    <string name="remove_from_hard">Usuń z trudnych</string>
+    <string name="clear">Wyczyść</string>
+    <string name="add">Dodaj</string>
+    <string name="filter">Filtruj</string>
+    <string name="sort">Sortuj</string>
+    <string name="loading">Czekaj, trwa ładowanie</string>
+    <string name="sets_not_found">Nie znaleziono pasujących zestawów</string>
+    <string name="connection_error">Wystąpił błąd połączenia</string>
+
+    <!--TESTY-->
+    <string name="bad">Źle</string>
+    <string name="correct_answer">Poprawna odpowiedź</string>
+    <string name="your_answer">Twoja odpowiedź</string>
+    <string name="next_question">Następne</string>
+    <!--OGOLNE ELEMENTY-->
+    <string name="name">Nazwa</string>
+    <string name="show_translation">Pokaż tłumaczenie</string>
+    <string name="hide_translation">Ukryj tłumaczenie</string>
+
+    <!--SLOWKO -->
+    <string name="word">Słówko</string>
+    <string name="part_of_speech">Częśc mowy</string>
+    <string name="category">Kategoria</string>
+    <string name="lesson">Lekcja</string>
+    <string name="difficult">Poziom trudności</string>
+    <string name="definition">Definicja</string>
+    <string name="definition_translation">Tłumaczenie definicji</string>
+    <string name="sentences_example">Przykładowe zdania</string>
+    <string name="sentence">Zdanie</string>
+    <string name="sentence_translation">Tłumaczenie zdania</string>
+    <string name="translation_separator">Tłumaczenia odziel znakiem ;</string>
+    <string name="number_words">Liczba słówek</string>
+    <string name="hints">Wskazówki</string>
+    <string name="hint">Wskazówka</string>
+    <string name="image">Obrazek</string>
+    <string name="record">Nagranie</string>
+    <string name="x">X</string>
+    <string name="mode">Rodzaj słówka</string>
+    <string name="loading_words">Trwa ładowanie słowek</string>
+    <string name="words_num">Liczba słówek</string>
+    <string name="size">Rozmiar</string>
+    <string name="rating">Ocena</string>
+    <string name="download_count">Liczba pobrań</string>
+
+    <!--POWTORKI-->
+    <string name="start_repetition">Rozpocznij powtórkę</string>
+    <!--ZBIOR -->
+    <string name="l2">Język którego chcesz sie nauczyć</string>
+    <string name="l1">Język który znasz </string>
+    <string name="lessons">Lekcje</string>
+    <string name="choose">Wybierz</string>
+    <string name="upload">Wyślij</string>
+    <string name="set_name">Nazwa zestawu</string>
+    <string name="language">Język</string>
+    <string name="vocabulary_set">Zestaw</string>
+    <string name="no_set">Nie ustawiono zbioru</string>
+    <string name="choose_set">Wybierz zestaw</string>
+    <string name="create_set">Utwórz zestaw</string>
+    <string name="sets_tab">Zestawy</string>
+    <string name="server_tab">Wysłane</string>
+    <string name="delete_images">Usuń obrazki</string>
+    <string name="delete_records">Usuń nagrania</string>
+    <string name="change_description">Zmień opis</string>
+    <!--LEKCJA -->
+    <string name="lesson_number">Numer lekcji</string>
+    <string name="lesson_name">Nazwa lekcji</string>
+    <string name="words">Słówka</string>
+    <string name="unallocated">Nieprzypisane</string>
+    <string name="change_lesson">Do której lekcji przenieść słówka</string>
+    <string name="deleting_lesson_message">Czekaj, trwa usuwanie lekcji</string>
+
+    <!--KATEGORIA-->
+    <string name="category_name">Nazwa kategorii</string>
+
+
+    <!--PODPOWIEDZI-->
+    <string name="hint_content">Zawartość podpowiedzi</string>
+    <!--CZESC MOWY-->
+    <string name="noun">Rzeczownik</string>
+    <string name="verb">Czasownik</string>
+    <string name="article">Przedimek</string>
+    <string name="adjective">Przymiotnik</string>
+    <string name="adverb">Przysłówek</string>
+    <string name="pronouns">Zaimek</string>
+    <string name="linkin_words">Spójnik</string>
+    <string name="numeral">Liczebnik</string>
+
+    <!--STRONA GLOWNA-->
+    <string name="new_words">Nowe słówka</string>
+    <string name="repetitions">Powtórki</string>
+    <!--JEZYKI -->
+    <string name="polish">Polski</string>
+    <string name="english">Angielski</string>
+    <string name="spanish">Hiszpański</string>
+    <string name="other_language">Inny</string>
+
+    <string name="title_activity_sentences_list">SentencesListActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sentence_detail">SentenceDetailActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="title_activity_lesson_edit">LessonEditActivity</string>
+    <string name="title_activity_set_selection">SetSelectionActivity</string>
+
+    <!--KOMUNIKATY-->
+    <string name="set_save_failed">Wystapił błąd podczas zapisywania do bazy dancyh :(</string>
+    <string name="save_word_failed">Wystąpił błąd podczas zapisywania słówka do bazy danych</string>
+    <string name="save_word_success">Pomyślnie zapisano słówko do bazy danych</string>
+    <string name="you_lost_progress_learning">Stracisz cały postęp z tej lekcji</string>
+    <string name="you_lost_progress_exercise">Stracisz cały postęp z tego ćwiczenia</string>
+    <string name="your_sure_leave">Czy na pewno chcesz wyjść?</string>
+    <string name="close_session_learning">Zamknij sesje nauki</string>
+    <string name="close_exercise">Zamknij ćwiczenie</string>
+    <string name="no_words">Brak słówek</string>
+    <string name="not_found_words">Nie znaleziono pasujacych słówek</string>
+    <string name="you_are_sure">Czy jesteś pewien?</string>
+    <string name="change_direction_message">Zmiana kierunku ćwiczenia spowoduje rozpoczęcie ćwiczenia od początku.</string>
+    <string name="no_repetitions_today">Nie ma zaplanowanych powtórek na dzisiaj</string>
+    <string name="deleting_word">Usuwanie słówka</string>
+    <string name="deleting_lesson">Usuwanie lekcji</string>
+    <string name="deleting_set">Usuwanie zestawu</string>
+    <string name="deleting_category">Usuwanie kategorii</string>
+    <string name="sure_delete_word">Czy na pewno chcesz usunąć słówko</string>
+    <string name="word_lesson_connection">Liczba słówek w usuwanej lekcji:</string>
+    <string name="sure_delete_category">Czy na pewno chesz usunąć kategorię</string>
+    <string name="sure_delete_set">Czy na pewno chcesz usunąć zestaw?</string>
+    <string name="sure_delete_images">Czy na pewno chcesz usunąć obrazki?</string>
+    <string name="sure_delete_records">Czy na pewno chcesz usunąć nagrania?</string>
+    <string name="sure_delte_lesson">Czy na pewno chcesz usunąć lekcje?</string>
+    <string name="not_empty_field">To pole nie może być puste</string>
+    <string name="not_zero_field">Wartość musi być większa od zera</string>
+    <string name="category_exist">Ta kategoria już istnieje</string>
+
+    <string name="success_save_set">Pomyślnie zapisano zestaw</string>
+    <string name="success_update_set">Pomyślnie zaktualizowano zestaw</string>
+
+    <string name="ok">OK</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="back">Cofnij</string>
+    <string name="delete_with_words">Usuń ze słówkami</string>
+    <string name="delete_without_words">Usuń, zostaw słówka</string>
+    <string name="saving">Zapisywanie</string>
+    <string name="word_saving">Trwa zapisywanie słówka, proszę czekać</string>
+
+
+    <string name="title_activity_lesson_selection">LessonSelectionActivity</string>
+    <string name="title_activity_category_selection">CategorySelectionActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_word_manager">WordManagerActivity</string>
+    <string name="title_activity_learning_list">LearningListActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="play_record_error">Wystąpił problem podczas odtwarzania nagrania</string>
+    <string name="long_records">Nagranie jest za długie. Maksymalna długość nagrania: </string>
+    <string name="seconds"> sekund</string>
+    <!--MENU-->
+    <string name="manage_words">Zarządzaj bazą słówek</string>
+    <string name="add_words">Dodaj słówka</string>
+    <string name="flashcards">Fiszki</string>
+    <string name="more_flashcards">Wiecej fiszek</string>
+    <string name="change_set">Zmień zestaw</string>
+    <string name="manage_sets">Zarządzaj zestawami</string>
+    <string name="settings">Ustawienia</string>
+    <string name="title_activity_learning">LearningActivity</string>
+    <string name="title_activity_summary_learning">SummaryLearningActivity</string>
+    <string name="title_activity_flashcard">FlashcardActivity</string>
+    <string name="download_sets">Pobierz zestawy</string>
+
+    <!--MENU CWICZENIA-->
+    <string name="change_exercise">Zmień ćwiczenie</string>
+    <string name="reverse_exercise">Odwróć ćwiczenie</string>
+
+    <string name="title_activity_preference">PreferenceActivity</string>
+
+    <!--USTAWIENIA-->
+    <string name="learning_category">Nauka</string>
+    <string name="notification_category">Powiadomienia</string>
+    <string name="general_category">Ogólne</string>
+    <string name="words_in_learning">Liczba słów w każdej sesji nauki</string>
+    <string name="words_in_repetitions">Liczba słów w każdej powtórce</string>
+    <string name="number_answers">Liczba odpowiedzi w teście wyboru</string>
+    <string name="number_flashcard">Liczba fiszek</string>
+    <string name="start_exercise">Początkowe ćwiczenie w powtórce</string>
+    <string name="start_direction">Domyślny kierunek ćwiczenia</string>
+    <string name="start_direction_summary">Określa czy ćwiczenie będzie prowadzone z języka obego na ojczysty czy odwrotnie</string>
+    <string name="reminders">Przypomnienia</string>
+    <string name="reminder_time">Czas przypomnienia</string>
+    <string name="sounds">Dźwięki</string>
+    <string name="answer_connection">Odpowiedzi połączone z pytaniem</string>
+    <string name="answer_connection_hint">Czy odpowiedzi w ćwiczeniu wyboru mają być powiązane z tematem pytania</string>
+    <string name="order_learning">Kolejność wyboru słów do uczenia</string>
+    <string name="show_speech_button">Przycisk mówienia w ćwiczeniu Wpisywanie</string>
+    <string name="reminder_sound">Dźwięk przypomnienia</string>
+    <string name="reminder_vibration">Wibracja</string>
+
+
+    <string name="random">Losowe</string>
+    <string name="lesson_and_difficult">Lekcja i trudność</string>
+    <string-array name="order_learning_array">
+        <item>@string/random</item>
+        <item>@string/lesson</item>
+        <item>@string/difficult</item>
+        <item>@string/lesson_and_difficult</item>
+    </string-array>
+    <string-array name="order_learning_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="answer_connection_array">
+        <item>@string/lack</item>
+        <item>@string/lesson</item>
+        <item>@string/category</item>
+    </string-array>
+    <string-array name="answer_connection_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="l1_to_l2">Z ojczystego na obcy</string>
+    <string name="l2_to_l1">Z obcego na ojczysty</string>
+    <string-array name="exercise_direction_array">
+        <item>@string/l1_to_l2</item>
+        <item>@string/l2_to_l1</item>
+    </string-array>
+    <string-array name="exercise_direction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!--CWICZENIA-->
+    <string name="choosing_exercise">Wybieranie</string>
+    <string name="writing_exercise">Wpisywanie</string>
+    <string name="know_exercise">Wiem/Nie wiem</string>
+    <string name="choose_exercise">Wybierz ćwiczenie</string>
+    <string-array name="exercises_types">
+        <item>@string/choosing_exercise</item>
+        <item>@string/writing_exercise</item>
+        <item>@string/know_exercise</item>
+    </string-array>
+    <string-array name="exercises_types_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="title_activity_repetitions">RepetitionsActivity</string>
+
+    <string name="learned">Wszystkie uczone</string>
+    <string name="last_learned">Ostatnio uczone</string>
+
+    <string-array name="flashcard_mode">
+        <item>@string/learned</item>
+        <item>@string/last_learned</item>
+        <item>@string/random</item>
+    </string-array>
+
+    <!--KALENDARZ-->
+    <string name="monday_abbr">PON</string>
+    <string name="tuesday_abbr">WT</string>
+    <string name="wednesday_abbr">ŚR</string>
+    <string name="thursday_abbr">CZW</string>
+    <string name="friday_abbr">PT</string>
+    <string name="saturday_abbr">SOB</string>
+    <string name="sunday_abbr">NIEDZ</string>
+    <string name="title_activity_current_set_selection">CurrentSetSelectionActivity</string>
+    <string name="title_activity_manage_words">ManageWordsActivity</string>
+
+    <!--ZAKLADKI-->
+    <string name="all_words">Wszystkie</string>
+    <string name="own_words">Własne</string>
+    <string name="selected_words">Zaznaczone</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_hint_list">HintListActivity</string>
+    <string name="title_activity_hint">HintActivity</string>
+
+    <string-array name="words_types">
+        <item>@string/all_words</item>
+        <item>@string/own_words</item>
+        <item>@string/selected_words</item>
+    </string-array>
+
+    <!--KATEGORIE-->
+    <string name="animals">Zwierzęta</string>
+    <string name="activities">Czynności</string>
+    <string name="work">Praca</string>
+    <string name="house">Dom</string>
+    <string name="war">Wojna</string>
+
+    <string name="field_not_empty">To pole nie może być puste</string>
+
+    <!--DIALOGI DODAWANIE SLOWKA-->
+    <string name="own_record">Nagranie własne</string>
+    <string name="recording">Nagrywanie</string>
+    <string name="title_activity_sets_manager">SetsManagerActivity</string>
+    <string name="title_activity_set_edit">SetEditActivity</string>
+    <string name="title_activity_words_manager">WordsManagerActivity</string>
+    <string name="title_activity_download_sets">DownloadSetsActivity</string>
+
+    <!--POBIERANIE ZESTAWÓW-->
+    <string name="added_date">Data dodania</string>
+    <string-array name="sorting_downloaded_set">
+        <item>@string/lack</item>
+        <item>@string/download_count</item>
+        <item>@string/rating</item>
+        <item>@string/added_date</item>
+    </string-array>
+    <string name="load_more">Załaduj więcej</string>
+    <string name="downloaded">Pobrano</string>
+    <string name="downloading">Pobieranie</string>
+    <string name="finished">Zakończono</string>
+    <string name="download">Pobierz</string>
+    <string name="images_size">Rozmiar obrazków</string>
+    <string name="records_size">Rozmiar nagrań</string>
+    <string name="description">Opis</string>
+    <string name="more_information">Więcej informacji</string>
+    <string name="less_information">Mniej informacji</string>
+
+    <string name="info">Informacje</string>
+    <string name="download_all">Pobierz wszystko</string>
+    <string name="download_database">Pobierz bazę</string>
+    <string name="download_images">Pobierz obrazki</string>
+    <string name="download_records">Pobierz nagrania</string>
+
+    <string name="upload_rating">Prześlij ocenę</string>
+    <string name="rate">Oceń</string>
+
+    <string name="database">Baza danych</string>
+    <string name="images">Obrazki</string>
+    <string name="records">Nagrania0</string>
+    <!--Wysyłanie zestawów-->
+    <string name="upload_all">Wyślij</string>
+    <string name="upload_database">Wyślij bazę</string>
+    <string name="upload_images">Wyslij obrazki</string>
+    <string name="upload_records">Wyślj nagrania</string>
+    <string name="uploading_database">Wysyłanie bazy danych</string>
+    <string name="uploading_images">Wysyłanie obrazków</string>
+    <string name="uploading_records">Wysyłanie nagrań</string>
+    <!--LOGOWANIE I REJESTRACJA-->
+    <string name="bad_login">Login lub hasło jest niepoprawne</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="email">Email</string>
+    <string name="repeat_password">Powtórz hasło</string>
+    <string name="login_exist">Ten login juz istnieje w bazie</string>
+    <string name="email_exist">Ten email już istnieje w bazie</string>
+    <string name="password_different">Hasła nie są takie same</string>
+    <string name="email_incorrect">Email jest niepoprawny</string>
+    <string name="short_password">Hasło za krótkie. Musi mieć przynajmniej </string>
+    <string name="signs"> znaków</string>
+    <string name="must_contain_number">Hasło musi zawierać przynajmniej jedną liczbę</string>
+    <string name="not_contain_element">Hasło nie może zawierać znaków : </string>
+    <string name="registration">Rejestracja</string>
+    <string name="registration_success">Rejestracja przebiegła pomyślnie</string>
+    <string name="title_activity_set_details">SetDetailsActivity</string>
+    <string name="wait_logging">Czekaj, trwa logowanie</string>
+    <string name="logging_error">Wystąpił błąd poczas logowania</string>
+    <string name="log_no_net">Nie udało się połączyć z powodu braku połączenia z internetem</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_rowSpan="2"
+        app:columnCount="2"
+        android:layout_gravity="left|top">
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/lesson"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+           android:gravity="center_vertical"
+            />
+        <Spinner android:id="@+id/lesson_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_height"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/category"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+        <Spinner android:id="@+id/category_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_height"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/difficult"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+        <Spinner android:id="@+id/difficult_spinner"
+        android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_height"
+        app:layout_gravity="center_vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/number_words"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.NumberPicker
+            android:id="@+id/words_number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_height"
+            app:layout_gravity="center_vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+    </android.support.v7.widget.GridLayout>
+    <Button
+        android:id="@+id/start_button"
+        style="@style/ButtonStyle"
+        android:text="@string/start"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"/>
+</LinearLayout>

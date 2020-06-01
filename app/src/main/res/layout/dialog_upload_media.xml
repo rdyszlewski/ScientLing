@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/media_text_view"
+       style="@style/TextViewStyle" />
+    <TextView android:id="@+id/size_text_view"
+        style="@style/TextViewStyle"/>
+    <Button android:id="@+id/upload_button"
+        style="@style/ButtonStyle"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/upload"/>
+</LinearLayout>

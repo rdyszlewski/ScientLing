@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <LinearLayout android:id="@+id/waiting_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar android:id="@+id/waiting_progress_bar"
+            android:layout_width="@dimen/square_button_size"
+            android:layout_height="@dimen/square_button_size" />
+        <TextView android:id="@+id/waiting_text_view"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/downloading"/>
+    </LinearLayout>
+    <TextView android:id="@+id/error_text_view"
+        style="@style/TextViewStyle"
+        android:visibility="gone"/>
+</LinearLayout>

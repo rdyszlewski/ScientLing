@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dyszlewskiR.edu.scientling">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.LingApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <receiver
+            android:name=".service.notification.NotificationStartupReceiver"
+            android:process=":reminder_process">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".service.notification.NotificationReceiver"
+            android:process=":reminder_process" />
+
+        <service
+            android:name=".service.notification.NotificationService"
+            android:process=":reminder_process" />
+        <service android:name=".service.management.DeletingLessonService" />
+        <service android:name=".service.management.DeletingSetService" />
+        <service android:name=".service.management.DeletingWordService" />
+        <service android:name=".service.net.download.DownloadSetsService" />
+        <!-- android:process=":downloading_set"/> -->
+        <service android:name=".service.net.upload.UploadSetService" />
+        <service android:name=".service.repetitions.RepetitionService" />
+        <service android:name=".service.speech.speechToText.TextToSpeechService" />
+        <service android:name=".service.net.deleting.DeletingSetService" />
+
+        <activity android:name=".presentation.activity.LoginActivity" />
+        <activity
+            android:name=".presentation.activity.ExerciseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".presentation.activity.RepetitionListActivity"
+            android:label="@string/title_activity_repetition_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SentencesListActivity"
+            android:label="@string/title_activity_sentences_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.WordEditActivity"
+            android:label="@string/title_activity_word_edit"
+            android:permission="android"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SentenceDetailActivity"
+            android:label="@string/title_activity_sentence_detail"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SetActivity"
+            android:label="@string/title_activity_set"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.LessonActivity"
+            android:label="@string/title_activity_lesson_edit"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SetSelectionActivity"
+            android:label="@string/title_activity_set_selection"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.LessonSelectionActivity"
+            android:label="@string/title_activity_lesson_selection"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.CategorySelectionActivity"
+            android:label="@string/title_activity_category_selection"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.LearningListActivity"
+            android:label="@string/title_activity_learning_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".presentation.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.activity.LearningActivity"
+            android:label="@string/title_activity_learning"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SummaryLearningActivity"
+            android:label="@string/title_activity_summary_learning"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.FlashcardActivity"
+            android:label="@string/title_activity_flashcard"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.PreferenceActivity"
+            android:label="@string/title_activity_preference" />
+        <activity
+            android:name=".presentation.activity.RepetitionsActivity"
+            android:label="@string/title_activity_repetitions"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.CurrentSetSelectionActivity"
+            android:label="@string/title_activity_current_set_selection"
+            android:theme="@style/NoActionBar" />
+
+        <service
+            android:name=".service.repetitions.SaveExerciseService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".presentation.activity.ManageWordsActivity"
+            android:label="@string/title_activity_manage_words"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".presentation.activity.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.HintsListActivity"
+            android:label="@string/title_activity_hint_list"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.HintActivity"
+            android:label="@string/title_activity_hint"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SetsManagerActivity"
+            android:label="@string/title_activity_sets_manager"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SetEditActivity"
+            android:label="@string/title_activity_set_edit"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.WordsManagerActivity"
+            android:label="@string/title_activity_words_manager"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.DownloadSetsActivity"
+            android:label="@string/title_activity_download_sets"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.SetDetailsActivity"
+            android:label="@string/title_activity_set_details"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.ProgressActivity"
+            android:label="@string/title_activity_progress"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.ProgressDetailsActivity"
+            android:label="@string/title_activity_progress_details"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".presentation.activity.EditAccountActivity"
+            android:label="@string/title_activity_edit_account"
+            android:theme="@style/NoActionBar"></activity>
+    </application>
+
+</manifest>

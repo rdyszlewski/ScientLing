@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <EditText  android:id="@+id/name_edit_text"
+        style="@style/EditTextStyle"
+        android:hint="@string/set_name"/>
+    <Button android:id="@+id/l2_button"
+        style="@style/EditTextStyle"
+        android:hint="@string/l2"
+        android:layout_below="@id/name_edit_text"
+        android:focusableInTouchMode="false"/>
+    <Button android:id="@+id/l1_button"
+        style="@style/EditTextStyle"
+        android:hint="@string/l1"
+        android:layout_below="@id/l2_button"
+        android:focusableInTouchMode="false"/>
+    <Button android:id="@+id/ok_button"
+        style="@style/ButtonStyle"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/ok"/>
+</RelativeLayout>

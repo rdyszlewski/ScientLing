@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_category">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="prefSounds"
+            android:summary=""
+            android:title="@string/sounds"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/learning_category" >
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.NumberPreference
+            android:title="@string/words_in_learning"
+            android:key="prefWordsInLearning"
+            android:defaultValue="5"
+            android:inputType="number"
+            />
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.NumberPreference
+            android:title="@string/number_flashcard"
+            android:key="prefNumberFlashcard"
+            android:defaultValue="7"
+            android:inputType = "number"
+            />
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.NumberPreference
+            android:title="@string/number_flashcard"
+            android:key="prefNumber"
+            />
+        <ListPreference
+            android:key="prefOrderLearning"
+            android:title="@string/order_learning"
+            android:entries="@array/order_learning_array"
+            android:entryValues="@array/order_learning_values"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/repetitions">
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.NumberPreference
+            android:title="@string/words_in_repetitions"
+            android:key="prefWordsInRepetitions"
+            android:defaultValue="5"
+            android:inputType="number"
+            />
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.NumberPreference
+            android:title="@string/number_answers"
+            android:key="prefNumberAnswers"
+            android:defaultValue="6"
+            android:inputType="number"
+            />
+
+        <ListPreference
+            android:key="prefDefaultExercise"
+            android:title="@string/start_exercise"
+            android:entries="@array/exercises_types"
+            android:entryValues="@array/exercises_types_values"
+            />
+        <ListPreference
+            android:key="prefDefaultDirection"
+            android:entries="@array/exercise_direction_array"
+            android:entryValues="@array/exercise_direction_values"
+            android:title="@string/start_direction"
+            android:summary="@string/start_direction_summary"
+            />
+        <ListPreference
+            android:key="prefAnswerConnection"
+            android:entries="@array/answer_connection_array"
+            android:title="@string/answer_connection"
+            android:summary="@string/answer_connection_hint"
+            android:entryValues="@array/answer_connection_values"
+            />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key=""
+            android:title="@string/show_speech_button"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_category">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="prefReminder"
+            android:title="@string/reminders"
+            />
+        <com.dyszlewskiR.edu.scientling.presentation.widgets.TimePickerPreference
+            android:title="@string/reminder_time"
+            android:key="prefReminderTime"
+            android:inputType="datetime"
+            />
+        <SwitchPreference
+            android:key="prefReminderSound"
+            android:title="@string/reminder_sound"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:key="prefReminderVibration"
+            android:title="@string/reminder_vibration"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

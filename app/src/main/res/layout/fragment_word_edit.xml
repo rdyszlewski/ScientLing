@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_above="@+id/save_button"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:fillViewport="true">
+                        <EditText android:id="@+id/word_edit_text"
+                            style="@style/SmallEditTextStyle"
+                            android:hint="@string/word"
+                            />
+                        <EditText android:id="@+id/translation_edit_text"
+                            style="@style/SmallEditTextStyle"
+                            android:hint="@string/translation_separator"
+                            android:windowSoftInputMode="stateVisible" />
+                        <ImageView android:id="@+id/more_image_button"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_below="@+id/basic_edit_group"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_more"/>
+                        <ViewStub android:id="@+id/more_container"
+                            android:layout="@layout/stub_edit_word"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                </LinearLayout>
+        </ScrollView>
+        <Button android:id="@id/save_button"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save"/>
+</RelativeLayout>
+
+

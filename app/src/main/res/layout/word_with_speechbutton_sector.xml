@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:background="@drawable/shadow_border"
+    >
+
+    <com.dyszlewskiR.edu.scientling.presentation.widgets.SayButton
+        android:id="@+id/say_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/margin"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/chooseWord"
+        layout="@layout/word_sector"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1" />
+
+
+
+    <com.dyszlewskiR.edu.scientling.presentation.widgets.SpeechButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/speech_button"
+        android:layout_margin="7dp"
+        android:layout_gravity="center_vertical"
+        />
+
+
+</LinearLayout>

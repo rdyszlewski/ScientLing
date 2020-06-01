@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_login"
+            android:title="@string/log_in" />
+        <item android:id="@+id/nav_flashcard"
+            android:title="@string/flashcards" />
+        <item android:id="@+id/nav_more_flashcards"
+            android:title="@string/more_flashcards" />
+        <item android:id="@+id/nav_progress"
+            android:title="@string/progress"/>
+        <item android:id="@+id/nav_manage_words"
+            android:title="@string/manage_words" />
+        <item android:id="@+id/nav_settings"
+            android:title="@string/settings" />
+        <item android:id="@+id/nav_change_set"
+            android:title="@string/change_set" />
+        <item android:id="@+id/nav_manage_sets"
+            android:title="@string/manage_sets" />
+        <item android:id="@+id/nav_download_sets"
+            android:title="@string/download_sets"/>
+        <item android:id="@+id/nav_edit_account"
+            android:title="@string/edit_account" />
+        <item android:id="@+id/nav_log_out"
+            android:title="@string/log_out"/>
+    </group>
+
+</menu>

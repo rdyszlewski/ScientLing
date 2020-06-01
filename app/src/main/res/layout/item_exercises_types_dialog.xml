@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exercise_name_text_view"
+    style="@style/TextViewStyle"
+    android:gravity="center_vertical"
+   android:layout_gravity="center_vertical"
+    />

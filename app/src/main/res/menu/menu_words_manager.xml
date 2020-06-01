@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dyszlewskiR.edu.scientling.presentation.activity.WordsManagerActivity">
+    <item android:id="@+id/filter_button"
+        android:icon="@drawable/ic_sentence"
+        android:title="@string/filter"
+        app:showAsAction="always"/>
+    <item android:id="@+id/search_button"
+        android:icon="@drawable/ic_definition"
+        android:title="@string/search"
+        app:showAsAction="always"/>
+    <item android:id="@+id/add_button"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add"
+        app:showAsAction="always" />
+</menu>

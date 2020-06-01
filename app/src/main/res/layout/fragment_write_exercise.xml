@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dyszlewskiR.edu.scientling.presentation.fragment.WritingExerciseFragment">
+
+    <include
+        layout="@layout/word_with_speechbutton_sector"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/word_sector"
+        android:layout_toLeftOf="@+id/say_button"
+        />
+    <include
+        layout="@layout/write_answer_sector"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
